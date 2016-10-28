@@ -105,6 +105,7 @@ html, body {
 #a1 .ponse{
     opacity: 1;
     animation: a1p 1s linear 2s 1 both;
+    -webkit-animation: a1p 1s linear 2s 1 both;
 }
 
 #a1 .myInfo {
@@ -117,16 +118,35 @@ html, body {
     top:12%;
     transition: all 0.5s;
     animation: photo 1s linear 0s both infinite;
+    -webkit-animation: photo 1s linear 0s both infinite;
 }
 @keyframes photo {
     0%,50%,100%{
         transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
     }
     25%{
         transform: rotate(-30deg);/*往左转30deg*/
+        -webkit-transform: rotate(-30deg);/*往左转30deg*/
     }
     75%{
         transform: rotate(30deg);/*往右转30deg*/
+        -webkit-transform: rotate(30deg);/*往右转30deg*/
+    }
+
+}
+@-webkit-keyframes photo {
+    0%,50%,100%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-30deg);/*往左转30deg*/
+        -webkit-transform: rotate(-30deg);/*往左转30deg*/
+    }
+    75%{
+        transform: rotate(30deg);/*往右转30deg*/
+        -webkit-transform: rotate(30deg);/*往右转30deg*/
     }
 
 }
