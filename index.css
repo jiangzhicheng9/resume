@@ -396,12 +396,12 @@ html, body {
 }
 
 .a4 h2, .a2 h2, .a3 h2{
-    padding-left: 10px;
+    padding-left: 30px;
     position: absolute;
     top: 56px;
     left: 42px;
     color: #fff;
-    font-size: 70px;
+    font-size: 60px;
     font-family: "Microsoft YaHei";
     font-weight: 100;
 }
@@ -514,7 +514,7 @@ html, body {
     height: 400px;
     line-height: 100px;
     margin-left: -175px;
-    font-size: 35px;
+    font-size: 30px;
     color: #fff;
     font-family: "Microsoft YaHei";
 }
@@ -563,20 +563,11 @@ html, body {
     margin-left: -10px;
 }
 
-.a5 p:nth-child(6) {
+.a5 p:nth-child(6),.a5 p:nth-child(7),.a5 p:nth-child(8),.a5 p:nth-child(9),.a5 p:nth-child(10) {
     margin-left: 45px;
 }
 
-.a5 p:nth-child(7) {
-    margin-left: 45px;
-}
 
-.a5 p:nth-child(8) {
-    margin-left: 45px;
-}
-.a5 p:nth-child(9) {
-    margin-left: 45px;
-}
 .a5 p:nth-child(odd) {
     -webkit-transform: translate(-800px, 0);
     transform: translate(-800px, 0);
@@ -599,7 +590,7 @@ html, body {
     top: -142px;
     left: -18px;
     color: #fff;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 100;
     font-family: "Microsoft YaHei";
 }
