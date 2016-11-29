@@ -10,6 +10,10 @@
 </head>
 <body>
 <div id="main">
+    <div class="music">
+        <audio src="audio/beyond.mp3" id="beyond" loop preload="none"></audio>
+    </div>
+
     <ul class="slide" id="slide">
         <li class="zIndex">
             <div class="a1">
@@ -111,3 +115,23 @@
 </body>
 </html>
 <script src="index.js"></script>
+<script>
+    var beyond=document.querySelector('#beyond');
+    var music=document.querySelector('.music');
+    window.setTimeout(function(){
+        beyond.play();//音频文件播放
+        beyond.addEventListener('canplay',function(){//边缓冲边播放
+            music.className='music musicMove';
+            music.style.opacity=1;
+        })
+    },1000);
+    music.addEventListener('click',function(){
+        if(beyond.paused){//停止
+            beyond.play();
+            music.className='music musicMove';
+        }else{
+            beyond.pause();
+            music.className='music';
+        }
+    })
+</script>
