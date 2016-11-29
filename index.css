@@ -806,6 +806,7 @@ html, body {
 }
 .musicMove{
     animation: move 1s infinite linear both;
+    -webkit-animation: move 1s infinite linear both;
 }
 @keyframes move {
     0%{
